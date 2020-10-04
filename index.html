@@ -14,7 +14,7 @@
   <style>
     model-viewer{
       width: 200px;
-      height: 400px;
+      height: 200px;
       margin: 0 auto;
     }
   </style>
@@ -31,7 +31,7 @@
 						<header>
 							<span class="avatar"><img src="images/mmsmall.jpg" alt="" /></span>
 							<h1>Mrudang Mathur</h1>
-							<p>PhD Student, UT-AUSTIN</p>
+							<h2>PhD Student, UT-AUSTIN</h2>
 						</header>
 						<!--
 						<hr />
@@ -70,8 +70,12 @@
 						</form>
 						<hr />
 						-->
-                        <p>Human Tricuspid Valve</p>
-                          <model-viewer src="assets/3Dtest.glb" ios-src="assets/3Dtest.usdz" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls></model-viewer>
+                        <p>Discover the Human Tricuspid Valve! Click </p>
+                          <model-viewer src="assets/3Dtest.glb" ios-src="assets/3Dtest.usdz" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls>
+                              <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+                                👋 Activate AR
+                                </button>
+                        </model-viewer>
 
 						<footer>
 							<ul class="icons">
