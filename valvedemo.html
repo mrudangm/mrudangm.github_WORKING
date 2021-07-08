@@ -10,7 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
           <title>Model Viewer</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
+
   <style>
     model-viewer{
       width: 200px;
@@ -69,7 +72,7 @@
 						<hr />
 						-->
                         <p>OCS13</p>
-                          <model-viewer src="assets/fibers.glb" ar autoplay ar-modes="scene-viewer" ar-scale="auto"camera-controls>
+                          <model-viewer src="assets/fibers.glb" ar autoplay ar-modes="scene-viewer" ar-scale="auto" camera-controls>
                               <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 10px; right: 4px; ">
                                 👋 Activate AR
                                 </button>
