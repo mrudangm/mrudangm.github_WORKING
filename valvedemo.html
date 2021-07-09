@@ -72,16 +72,16 @@
 						<hr />
 						-->
                         <p>OCS13</p>
-                          <model-viewer id="fibers" src="assets/fibers.glb" ar interaction-prompt="none" ar-modes="scene-viewer" ar-scale="auto" camera-controls>
+                          <model-viewer id="fibers" src="assets/fibers.glb" ar autplay interaction-prompt="none" ar-modes="scene-viewer" ar-scale="auto" camera-controls>
                               <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 10px; right: 4px; ">
                                 👋 Activate AR
                                 </button>
                               
-  <button id="hotspotButton"
+  <!-button id="hotspotButton"
     slot="hotspot-one"
-    data-position="..." data-normal="...">Hotspot</button>
+    data-position="..." data-normal="...">Hotspot<!-/button>
                               </model-viewer>  
-<script>
+<!-script>
 hotspotButton.addEventListener('click', () => {
   if (modelViewer.paused) {
     modelViewer.play();
@@ -89,7 +89,7 @@ hotspotButton.addEventListener('click', () => {
     modelViewer.pause();
   }
 });
-</script>
+<!-/script>
                       
 
                         
